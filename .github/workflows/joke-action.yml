@@ -23,3 +23,9 @@ jobs:
         with:
          issue-number: ${{ github.event.issue.number }}
          body: ${{ steps.get-joke.outputs.joke }}
+
+
+
+# - name: Get Joke         # This is the step name (for display in Actions UI)
+#   id: get-joke           # This gives the step an ID for referencing outputs
+#   uses: ./               # This tells GitHub to use your local action (from action.yml)
